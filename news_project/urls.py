@@ -21,6 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('users/', include('users.urls')), #for the signup view
     path('users/', include('django.contrib.auth.urls')), #provides urls and view for log in and log out 
-    path('articles/', include('articles.urls')),
+    path('articles/', include('articles.urls')), #urls for the articles app
     path('', include('pages.urls')),
 ]
